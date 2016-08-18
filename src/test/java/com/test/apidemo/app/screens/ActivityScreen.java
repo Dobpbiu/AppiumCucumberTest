@@ -25,6 +25,7 @@ public class ActivityScreen extends AbstractScreen {
     }
 
     public void clickOnSecureSurfaceLable() {
+        driver.scrollTo("Secure Surfaces");
         secureSurfaceElement.click();
     }
 }

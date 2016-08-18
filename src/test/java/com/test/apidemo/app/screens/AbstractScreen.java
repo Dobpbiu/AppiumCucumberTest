@@ -1,6 +1,7 @@
 package com.test.apidemo.app.screens;
 
 import io.appium.java_client.AppiumDriver;
+
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
@@ -44,7 +45,7 @@ public abstract class AbstractScreen {
 
     public boolean isElementPresent(By by) {
         try {
-            driver.findElement(by);
+            driver.findElements(by);
             return true;
         } catch (NoSuchElementException e) {
             return false;

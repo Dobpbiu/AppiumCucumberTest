@@ -26,10 +26,10 @@ public class AppScreen extends AbstractScreen {
 
     public void clickOnActivityLable() {
         appActivityElement.click();
-        driver.scrollTo("Secure Surfaces");
     }
 
     public void clickOnNotificationLable() {
+        driver.scrollTo("Notification");
         appNotificationElement.click();
     }
 }
